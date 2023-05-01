@@ -17,4 +17,6 @@ Resources:
        - Key : Name
          Value : Baby-Server
        - Key : Location
-         Value : Varanasi  
+         Value : Varanasi 
+       - Key:   Date
+         Value: 01/05/2023 
