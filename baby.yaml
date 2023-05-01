@@ -1,0 +1,27 @@
+Parameters:
+  Ec2Image:
+   Type: String
+   Default: ami-0c11defa0c07fb9cb
+  Ec2InstanceType:
+    Type: String
+    Default: t2.micro
+  Ec2KeyPair:
+    Type: String
+    Default: terraform
+
+Resources:
+  PunchuServer:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: !Ref Ec2Image
+      InstanceType: !Ref Ec2InstanceType
+      KeyName: !Ref Ec2KeyPair
+      Tags:
+       - Key : Name 
+         Value: PunchuServer
+       - Key : Location
+         Value: Gaura
+
+
+
+
