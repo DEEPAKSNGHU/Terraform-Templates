@@ -1,0 +1,18 @@
+Resources:
+  BabyKeypair:
+    Type: AWS::EC2::KeyPair
+    Properties:
+       KeyName: BabyKey
+  DeepakServer:
+    Type: AWS::EC2::Instance
+    DependsOn: BabyKeypair
+    Properties: 
+      ImageId: ami-069aabeee6f53e7bf
+      InstanceType: t2.micro
+      KeyName: BabyKey
+      Tags:
+       - Key: Name
+         Value: Deepaks
+       - Key: Trail
+         Value: Cloudformation
+     
