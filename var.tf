@@ -37,3 +37,8 @@ variable "availabilityzone5" {
 
 }
 
+
+variable "testing-git" {
+       type =string
+       default = git
+}
