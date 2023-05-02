@@ -24,3 +24,8 @@ variable "iaminstanceprofile" {
 
 }
 
+
+variable "testing-git" {
+       type =string
+       default = git
+}
