@@ -15,4 +15,6 @@ Resources:
          Value: git
        - Key: Trail
          Value: github``
-    
+       - key: trail mode
+       - value:succes
+       ``
