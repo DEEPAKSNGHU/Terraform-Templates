@@ -12,7 +12,12 @@ Resources:
       KeyName: BabyKey
       Tags:
        - Key: Name
+ 
+         Value: kaustubh
+       - Key: Git
+         Value: Testing         
          Value: git
        - Key: Trail
          Value: github``
     
+
