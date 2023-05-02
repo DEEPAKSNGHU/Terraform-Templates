@@ -12,7 +12,6 @@ Resources:
       KeyName: BabyKey
       Tags:
        - Key: Name
-         Value: Deepaks
-       - Key: Trail
-         Value: Cloudformation
-     
+         Value: kaustubh
+       - Key: Git
+         Value: Testing         
