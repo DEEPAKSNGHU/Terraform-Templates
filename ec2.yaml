@@ -2,7 +2,7 @@ Resources:
   BabyKeypair:
     Type: AWS::EC2::KeyPair
     Properties:
-       KeyName: BabyKey
+       KeyName: github
   DeepakServer:
     Type: AWS::EC2::Instance
     DependsOn: BabyKeypair
@@ -12,6 +12,12 @@ Resources:
       KeyName: BabyKey
       Tags:
        - Key: Name
+ 
          Value: kaustubh
        - Key: Git
          Value: Testing         
+         Value: git
+       - Key: Trail
+         Value: github``
+    
+
