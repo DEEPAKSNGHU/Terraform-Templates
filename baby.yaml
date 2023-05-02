@@ -18,9 +18,9 @@ Resources:
       KeyName: !Ref Ec2KeyPair
       Tags:
        - Key : Name 
-         Value: PunchuServer
+         Value: "PunchuServer"
        - Key : Location
-         Value: Gaura
+         Value: "Gaura"
 
 
 
