@@ -4,7 +4,7 @@ resource "aws_instance" "ted-baker" {
   availability_zone           = "${element(var.azs, count.index)}"
   key_name                    = var.KeyName
   vpc_security_group_ids      = var.sg
-  count                       = 1
+  count                       = 2
   iam_instance_profile        = var.iaminstanceprofile
   associate_public_ip_address = var.associate-public-ip
   disable_api_termination     = var.terminate
