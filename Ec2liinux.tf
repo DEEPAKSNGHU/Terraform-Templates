@@ -4,7 +4,7 @@ resource "aws_instance" "ted-baker" {
   availability_zone           = "${element(var.azs, count.index)}"
   key_name                    = var.KeyName
   vpc_security_group_ids      = var.sg
-  count                       = 2
+  count                       = 1
   iam_instance_profile        = var.iaminstanceprofile
   associate_public_ip_address = var.associate-public-ip
   disable_api_termination     = var.terminate
@@ -28,12 +28,12 @@ resource "aws_instance" "ted-baker" {
 }
 
 resource "aws_eip" "lab-testing" {
-  count = 2  
+  count = 1  
   vpc   = true
 }
 
 resource "aws_eip_association" "lab-testing" {
-  count = 2
+  count = 1
 
   instance_id   = aws_instance.ted-baker[count.index].id
   allocation_id = aws_eip.lab-testing[count.index].id
